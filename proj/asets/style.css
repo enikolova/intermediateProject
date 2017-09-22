@@ -2,12 +2,18 @@ header {
     background-color:#005eb8;
     width: 100%;
     height: 100px;
-   box-sizing: border-box;
+    box-sizing: border-box;
  
+}
+
+body{
+     background-color:#fafafa;
 }
 #content{
     width: 75%;
     margin: auto;
+    height: 500px;
+    background-color: white;
     height: 800px;
 }
 .logo{
@@ -17,9 +23,10 @@ header {
 }
 #logo1{
     float: left;
-    margin-left: 30px;
-  
-    width:200px;
+    margin-left: 5em;
+    position: relative;
+    top:70px;
+    width:150px;
 }
 input[type=search] {
     position: absolute;
@@ -36,27 +43,85 @@ input[type=search] {
 input[type=search]:focus {
     width: 20%;
 }
-header a{
+a{
      font-size: 1em;
+     font-family: Arial, Helvetica, sans-serif;
      line-height: 27px;
      color: white;
      text-decoration: none;
      margin-right:0.4em;
 }
-div>i{
+#login_div>i{
      width:2em;
 }
-div >span{
+#login_div>span{
     margin-right: 0.6em;
 }
 
 #login_div{
-    padding-top:2.5em; 
-     padding-bottom:2.5em; 
+    padding-top:2.3em; 
+     padding-bottom:2.3em; 
     margin-right: 5em;
     float: right;
 }
+#white{
+    box-sizing: border-box;
+    border-bottom: 1px solid grey;
+    box-shadow: 0px 0px 5px 0px;
+    position: relative;
+    background-color: white;
+    top:-10px;
+    height: 40px;
+    width: 100%;
+    display: flex;
 
+}
+#category{
+  
+    display:flex;
+    width:18%;
+   margin-left: 5em;
+    background-color: #00aff5;
+   padding: 0.4em;
+   text-align: center;
+}
+#category>span:nth-child(2){
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 10px;
+     margin-top: 5px;
+}
+#category>a{
+      font-size: 0.9em;
+      text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  margin-left: 5px;
+   /*margin-top: 5px;*/
+}
+#white>ul{
+    margin-top:5px;
+    list-style-type: none;
+    display: inline;
+    margin-left: 10px;
+   
+}
+#white>ul a{
+    color: grey;
+     margin-left: 10px;
+
+}
+#white>ul a:hover{
+    color: grey;
+    text-decoration: underline;
+     font-size: 0.75em;
+    
+}
+#white>ul li{
+
+    display: inline;
+}
 
 footer{
     background-color:#ffffff;
