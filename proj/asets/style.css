@@ -43,7 +43,7 @@ input[type=search] {
 input[type=search]:focus {
     width: 20%;
 }
-a{
+#login_div a{
      font-size: 1em;
      font-family: Arial, Helvetica, sans-serif;
      line-height: 27px;
@@ -98,29 +98,86 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
   margin-left: 5px;
-   /*margin-top: 5px;*/
+   margin-top: 5px;
 }
 #white>ul{
-    margin-top:5px;
+    margin-top:10px;
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     margin-left: 10px;
    
 }
 #white>ul a{
     color: grey;
      margin-left: 10px;
+      text-decoration:none;
 
 }
 #white>ul a:hover{
     color: grey;
     text-decoration: underline;
+<<<<<<< HEAD
     
+=======
+     /*font-size: 0.75em;*/
+>>>>>>> 82b15cec9c7d10b186b2c71157f596b30d1204a7
     
 }
 #white>ul li{
 
     display: inline;
+}
+
+#aside-menu{
+     background-color: white;
+    /*display: inline-block;*/
+    margin-left:5em;
+    width:17%;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    margin-top: -10px;
+    float:left;
+     
+}
+#aside-menu li:first-of-type{
+    margin-top:5px;
+}
+#aside-menu li{
+    margin:18px auto;
+    box-sizing: border-box;
+}
+#aside-menu a{
+    color:black;
+    font-size: 1em;
+    text-decoration: none;
+     box-sizing: border-box;
+}
+.menu{
+    margin-top: -12px;
+    width:70%;
+    display: none;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+.menu ul{
+    /*display: inline-block;*/
+    float: left;
+    width: 15%;
+    margin-left: 20px;
+}
+.menu li{
+    margin:15px auto;
+}
+.menu li:first-of-type{
+    font-weight: bold;
+}
+.menu a{
+    text-decoration: none;
+    color:black;
+}
+.menu a:hover{
+    text-decoration: underline;
+    color:blue;
 }
 
 footer{

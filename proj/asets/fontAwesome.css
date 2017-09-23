@@ -31,4 +31,20 @@ font-size: 1.5em;
      color: white;
       font-size: 1em;
       margin-top: 5px;
+      margin-left: 4px
+}
+.fa-mobile{
+    color:black;
+    font-size: 2em;
+    margin-right: 3px;
+}
+.fa-television{
+    color:black;
+     font-size: 1.15em;
+      margin-right: 3px;
+}
+.fa-camera{
+    color:black;
+     font-size: 1.15em;
+      margin-right: 3px;
 }
