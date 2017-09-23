@@ -51,11 +51,14 @@ input[type=search]:focus {
      text-decoration: none;
      margin-right:0.4em;
 }
-#login_div>i{
+#login_div>div{
+     display: inline-block;
+}
+#login_div i{
      width:2em;
 }
 #login_div>span{
-    margin-right: 0.6em;
+    margin-right: 0.5em;
 }
 
 #login_div{
@@ -63,7 +66,44 @@ input[type=search]:focus {
      padding-bottom:2.3em; 
     margin-right: 5em;
     float: right;
+   
 }
+#log{
+    position: absolute;
+    top:87px;
+    left:750px;
+    display: none;
+    background-color: white;
+    width:20%;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px;
+    padding: 10px;
+}
+#log>div{
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#log>div>button{
+    margin-right: 5px;
+    background-color: blue;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*#favorite{
+    position: absolute;
+    top:87px;
+    left:850px;
+     background-color: white;
+    /*width:20%;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px;
+    padding: 10px;*/
+
 #white{
     box-sizing: border-box;
     border-bottom: 1px solid grey;
@@ -116,11 +156,9 @@ input[type=search]:focus {
 #white>ul a:hover{
     color: grey;
     text-decoration: underline;
-<<<<<<< HEAD
-    
-=======
+
      /*font-size: 0.75em;*/
->>>>>>> 82b15cec9c7d10b186b2c71157f596b30d1204a7
+
     
 }
 #white>ul li{
@@ -133,6 +171,7 @@ input[type=search]:focus {
     /*display: inline-block;*/
     margin-left:5em;
     width:17%;
+    height: 410px;
     border: 1px solid lightgray;
     padding: 5px 10px;
     margin-top: -10px;
@@ -153,8 +192,11 @@ input[type=search]:focus {
      box-sizing: border-box;
 }
 .menu{
-    margin-top: -12px;
+    position: absolute;
+    top:139px;
+    left:331px;
     width:70%;
+    height: 420px;
     display: none;
     border: 1px solid lightgray;
     background-color: white;
@@ -167,6 +209,7 @@ input[type=search]:focus {
 }
 .menu li{
     margin:15px auto;
+    
 }
 .menu li:first-of-type{
     font-weight: bold;
@@ -176,6 +219,7 @@ input[type=search]:focus {
     color:black;
 }
 .menu a:hover{
+    padding-bottom: 15px;
     text-decoration: underline;
     color:blue;
 }
