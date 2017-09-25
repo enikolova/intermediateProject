@@ -58,7 +58,7 @@ input[type=search]:focus {
      width:2em;
 }
 #login_div>span{
-    margin-right: 0.5em;
+    margin-right:0.5em;
 }
 
 #login_div{
@@ -93,17 +93,39 @@ input[type=search]:focus {
     padding: 10px;
     border-radius: 5px;
 }
-/*#favorite{
+#favorite{
+    display: none;
     position: absolute;
     top:87px;
     left:850px;
      background-color: white;
-    /*width:20%;
+    width:20%;
     z-index: 1000;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px;
-    padding: 10px;*/
-
+    padding: 10px;
+}
+#favorite>div>button{
+    margin-right: 5px;
+    background-color: blue;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: 75px;
+   
+}
+#cart{
+     display: none;
+    position: absolute;
+    top:87px;
+    left:1000px;
+     background-color: white;
+    width:20%;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px;
+    padding: 10px;
+}
 #white{
     box-sizing: border-box;
     border-bottom: 1px solid grey;
@@ -167,8 +189,8 @@ input[type=search]:focus {
 }
 
 #aside-menu{
+    display: flex;
      background-color: white;
-    /*display: inline-block;*/
     margin-left:5em;
     width:17%;
     height: 410px;
@@ -176,13 +198,18 @@ input[type=search]:focus {
     padding: 5px 10px;
     margin-top: -10px;
     float:left;
+   
      
+}
+#aside-menu ul{
+    box-sizing: border-box;
 }
 #aside-menu li:first-of-type{
     margin-top:5px;
 }
 #aside-menu li{
     margin:18px auto;
+    padding: 18px auto;
     box-sizing: border-box;
 }
 #aside-menu a{
@@ -209,6 +236,7 @@ input[type=search]:focus {
 }
 .menu li{
     margin:15px auto;
+    box-sizing: border-box;
     
 }
 .menu li:first-of-type{
