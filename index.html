@@ -7,32 +7,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E-shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="asets/reset.css">
-    <link rel="stylesheet" href="asets/style.css">
-    <link rel="stylesheet" href="asets/fontAwesome.css">
 
-    <link rel="icon" href="asets/images/eshop.png">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src='asets/script/menu.js'></script>
-    <script src='asets/script/logIn.js'></script>
+    <link rel="stylesheet" href="proj/asets/fontAwesome.css">
+    <link rel="stylesheet" href="proj/asets/reset.css">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script src='proj/asets/script/menu.js'></script>
+    <script src='proj/asets/script/logIn.js'></script>
+    <link rel="stylesheet" href="proj/asets/style.css">
+    <link rel="icon" href="proj/asets/images/eshop.png">
+    <script src='proj/asets/script/reg.js'></script>
+
 </head>
 
 <body>
+    <div id='mainPage'>
+        
+        <div id='login'>
+           <div>
+               <img class='logo2' src="proj/asets/images/eshop.png" alt="e-shop">
+               </div>
+            <form class="form-signin">
+                <h2 class="form-signin-heading">Здравей</h2>
+                <input type="email" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+                <input type="password" class="form-control" name="password" placeholder="Password" required="" />
+                <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                <a href="">Забравена парола</a>
+                <hr>
+                <span>Нямаш акаунт в e-shop?</span>
+                <a href="" id='register'>Регистрирай се!</a>
+            </form>
+        </div>
+        <div id='reg'>
+            <div><img class='logo2' src="proj/asets/images/eshop.png" alt="e-shop"></div>
+            <form class="form-signin">
+                <h2 class="form-signin-heading">Здравей</h2>
+                <input type="email" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+                <input type="password" class="form-control" name="password" placeholder="Password" required="" />
+                 <input type="password" class="form-control" name="password" placeholder="Repeat password" required="" />
+                <label class="checkbox">
+        <input type="checkbox" value="read" id="read" name="read">Прочетох и съм съгласен с Условията за ползване
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="read" id="read" name="read">Искам винаги да бъда запознат с най-актуалните оферти
+      </label>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Продължи</button>
+            </form>
+        </div>
+    </div>
     <div id="main">
-        <header data-spy='affix' data-offset-top="197">
-            <div><img class="logo" id="logo1" src="asets/images/eshop.png" alt="e-shop"></div>
+        <header>
+            <div><img class="logo" id="logo1" src="proj/asets/images/eshop.png" alt="e-shop"></div>
             <!--<input type="search" name="search" placeholder="Търси?">-->
 
             <div id="login_div">
-               <div> <i class="fa fa-user"></i><a href="">Моят акаунт</a><span class="fa fa-angle-down"></span></div>
+                <div> <i class="fa fa-user"></i><a href="">Моят акаунт</a><span class="fa fa-angle-down"></span></div>
                 <div><i class="fa fa-heart"></i><a href="">Любими</a><span class="fa fa-angle-down"></span></div>
                 <div><i class="fa fa-shopping-cart"></i><a href="">Моята количка</a> <span class="fa fa-angle-down"></span></div>
             </div>
             <div id='log'>
-                 <i class="fa fa-user"></i><span>Влез в акаунта си и се възползвай от предимствата си</span>
-                 <hr>
+                <i class="fa fa-user"></i><span>Влез в акаунта си и се възползвай от предимствата си</span>
+                <hr>
                 <div> <button><i class='fa fa-angle-double-right'></i>Влез в акаунт</button> <a href="">Нов акаунт</a> </div>
             </div>
             <div id='favorite'>
@@ -50,7 +89,7 @@
                     <a href="">виж всички</a>
                     <i class="fa fa-angle-right"></i>
                 </div>
-                
+
 
                 <ul>
                     <li><a href="">Оферти на седмица</a></li>
@@ -66,17 +105,17 @@
                         <li id='first'><a href=""><i class="fa fa-mobile" aria-hidden="true"></i><span>Телефони,Таблети &amp Лаптопи</span></a></li>
                         <li id='second'><a href=""><i class="fa fa-television" aria-hidden="true"></i><span>TV, Електроника &amp Gaming</span></a></li>
                         <li id='third'><a href=""><i class="fa fa-camera" aria-hidden="true"></i><span>Фото,Видео &amp Опитика</span></a></li>
-                        <li id='forth'><a href=""><img src='asets\images\t-shirt.png' width=20/><span>Мода</span></a></li>
-                        <li id='fifth'><a href=""><img src='asets\images\26441.png' width=20/><span>TV, Електроника &amp Gaming</span></a></li>
-                        <li id='sixth'><a href=""><img src="asets\images\book-16-xxl.png" width=20 alt=""><span>Книги &amp Офис консумативи</span></a></li>
-                        <li id='seventh'><a href=""><img src='asets\images\1372.png' width=20/><span>Дом,Градина &amp Petshop</span></a></li>
-                        <li id='eighth'><a href=""><img src='asets\images\695112_bear_512x512.png' width=20/><span>Играчки &amp Детски артикули</span></a></li>
-                        <li id='ninth'><a href=""><img src='asets\images\95240_sport_512x512.png' width=20 /><span>Спорт &amp Свободно време</span></a></li>
+                        <li id='forth'><a href=""><img src='proj\asets\images\t-shirt.png' width=20/><span>Мода</span></a></li>
+                        <li id='fifth'><a href=""><img src='proj\asets\images\26441.png' width=20/><span>TV, Електроника &amp Gaming</span></a></li>
+                        <li id='sixth'><a href=""><img src="proj\asets\images\book-16-xxl.png" width=20 alt=""><span>Книги &amp Офис консумативи</span></a></li>
+                        <li id='seventh'><a href=""><img src='proj\asets\images\1372.png' width=20/><span>Дом,Градина &amp Petshop</span></a></li>
+                        <li id='eighth'><a href=""><img src='proj\asets\images\695112_bear_512x512.png' width=20/><span>Играчки &amp Детски артикули</span></a></li>
+                        <li id='ninth'><a href=""><img src='proj\asets\images\95240_sport_512x512.png' width=20 /><span>Спорт &amp Свободно време</span></a></li>
                         <li id='tenth'><a href=""><i class="fa fa-car" aria-hidden="true"></i></i><span>Застраховки &amp Авто</span></a></li>
                     </ul>
                 </div>
             </div>
-            <div id='first-menu' class='menu' >
+            <div id='first-menu' class='menu'>
                 <ul>
                     <li><a href="">Мобилни телефони и аксесоари</a></li>
                     <li><a href="">Мобилни телефони</a></li>
@@ -119,37 +158,37 @@
                     <li><a href="">Външни антени</a></li>
                     <li><a href="">Мобилни услуги,телевизия и интернет</a></li>
                 </ul>
-               <ul>
-                   <li><a href="">Системи за домашно кино &amp Аудио Hi-Fi</a></li>
-                   <li><a href="">Системи за домашно кино</a></li>
-                   <li><a href="">Аудио системи</a></li>
-                   <li><a href="">Мултимедийни плейъри</a></li>
-                   <li><a href="">Грамофони</a></li>
-                   <li><a href="">Усилватели</a></li>
-                   <li><a href="">Тонколони</a></li>
-               </ul>
-               <ul>
-                   <li><a href="">Конзоли &amp игри</a></li>
-                   <li><a href="">Hardware конзоли</a></li>
-                   <li><a href="">Преносими конзоли</a></li>
-                   <li><a href="">Игри за конзола &amp Компютър</a></li>
-                   <li><a href="">Геймпадове,джойстици &amp  слушалки</a></li>
-                   <li><a href="">Аксесоари за конзоли &amp PC</a></li>
-               </ul>
-            </div>
-            <div id='third-menu' class='menu' style='display:none'>
-            <div>
-                <ul >
-                    <li><a href="">Фотоапарати</a></li>
-                    <li><a href="">Компактни фотоапарати</a></li>
-                    <li><a href="">Фотоапарати Mirrorless</a></li>
+                <ul>
+                    <li><a href="">Системи за домашно кино &amp Аудио Hi-Fi</a></li>
+                    <li><a href="">Системи за домашно кино</a></li>
+                    <li><a href="">Аудио системи</a></li>
+                    <li><a href="">Мултимедийни плейъри</a></li>
+                    <li><a href="">Грамофони</a></li>
+                    <li><a href="">Усилватели</a></li>
+                    <li><a href="">Тонколони</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">Видеокамери &amp аксесоари</a></li>
-                    <li><a href="">Видеокамери</a></li>
-                    <li><a href="">Спортни видеокамери</a></li>
+                    <li><a href="">Конзоли &amp игри</a></li>
+                    <li><a href="">Hardware конзоли</a></li>
+                    <li><a href="">Преносими конзоли</a></li>
+                    <li><a href="">Игри за конзола &amp Компютър</a></li>
+                    <li><a href="">Геймпадове,джойстици &amp  слушалки</a></li>
+                    <li><a href="">Аксесоари за конзоли &amp PC</a></li>
                 </ul>
             </div>
+            <div id='third-menu' class='menu' style='display:none'>
+                <div>
+                    <ul>
+                        <li><a href="">Фотоапарати</a></li>
+                        <li><a href="">Компактни фотоапарати</a></li>
+                        <li><a href="">Фотоапарати Mirrorless</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Видеокамери &amp аксесоари</a></li>
+                        <li><a href="">Видеокамери</a></li>
+                        <li><a href="">Спортни видеокамери</a></li>
+                    </ul>
+                </div>
             </div>
             <div id='forth-menu' class='menu' style='display:none'>
             </div>
@@ -157,9 +196,9 @@
             </div>
             <div id='sixth-menu' class='menu' style='display:none'>
             </div>
-            <div id='seventh-menu' class='menu'style='display:none'> 
+            <div id='seventh-menu' class='menu' style='display:none'>
             </div>
-            <div id='eighth-menu' class='menu'style='display:none'>
+            <div id='eighth-menu' class='menu' style='display:none'>
             </div>
             <div id='ninth-menu' class='menu' style='display:none'>
             </div>
