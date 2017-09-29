@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded',function(){
           menu.style.display='none';
       })
       x.addEventListener('mouseover',function(){
-        x.style.borderTop='0.5px solid lightgrey';
-         x.style.borderBottom='0.5px solid lightgrey';
-          x.style.borderRight='none'
            menu.style.display='inline-block';
           event.stopImmediatePropagation()
            console.log(menu);
@@ -20,7 +17,8 @@ document.addEventListener('DOMContentLoaded',function(){
       x.addEventListener('mouseout',function(){
           x.style.border='none';
            menu.style.display='none';
-          console.log(menu);
+           console.log(menu);
+          
       })
   })
 
