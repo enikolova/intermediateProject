@@ -4,4 +4,5 @@ document.querySelector('#register').addEventListener('click',function(){
     document.getElementById('login').style.display='none';
     document.getElementById('reg').style.display='block';
 })
+
 })
